@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting - Pomodoro</title>
+  <link rel="stylesheet" href="settings.css">
+  <script src="settings.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h3 class="title">Setting</h3>
+
+    <div class="field">
+      <label for="timer-minutes" class="field-label">타이머 시간 (분)</label>
+      <input type="number" id="timer-minutes" class="input-minutes" min="1" max="60" value="25">
+    </div>
+
+    <button type="button" class="btn btn-save">설정 완료</button>
+  </main>
+</body>
+</html>
