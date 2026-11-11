@@ -85,3 +85,22 @@ window.onstorage = (event) => {
 };
 
 render();
+
+// 현재 시각 표시
+const clock = document.querySelector(".clock");
+
+function renderClock() {
+  const now = new Date();
+  clock.textContent = now.toLocaleString("ko-KR", {
+    month: "long",
+    day: "numeric",
+    weekday: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  clock.dateTime = now.toISOString();
+}
+
+renderClock();
+setInterval(renderClock, 1000);
